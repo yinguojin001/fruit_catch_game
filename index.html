@@ -1,0 +1,40 @@
+<!-- trigger deploy -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>接水果小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="lives">生命: <span id="lives">3</span></div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="basket" id="basket"></div>
+            <div class="game-over" id="gameOver">
+                <h2>游戏结束</h2>
+                <p>最终得分: <span id="finalScore">0</span></p>
+                <button onclick="restartGame()">重新开始</button>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <button class="control-btn" id="leftBtn">←</button>
+            <button class="control-btn" id="rightBtn">→</button>
+        </div>
+        
+        <div class="instructions">
+            <p>🍎 接住掉下来的水果获得分数</p>
+            <p>💣 避免接住炸弹</p>
+            <p>使用按钮或触摸屏幕控制篮子</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
